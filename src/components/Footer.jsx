@@ -21,7 +21,7 @@ export default function Footer() {
             StarWars.com
           </a>
           <a
-            href="https://www.youtube.com/watch?v=ynCilUNIg7w"
+            href="https://www.youtube.com/watch?v=IHWlvwu8t1w"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"

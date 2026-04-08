@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import Trailer from './components/Trailer'
 import Characters from './components/Characters'
+import Gallery from './components/Gallery'
 import Footer from './components/Footer'
 import Stars from './components/Stars'
 
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Characters />
       <Trailer />
+      <Gallery />
       <Footer />
     </div>
   )

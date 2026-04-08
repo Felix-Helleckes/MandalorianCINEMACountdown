@@ -1,37 +1,67 @@
 import { useState } from 'react'
 import './Gallery.css'
 
-// Landscape wallpaper-style Mandalorian promotional images
 const images = [
   {
-    src: 'https://lumiere-a.akamaihd.net/v1/images/wbw_dlp_mandalorian_rmt_09_c1ac93f8.jpeg',
-    alt: 'The Mandalorian – Beskar Armor',
+    src: 'https://wallpapercave.com/wp/wp14136007.png',
+    alt: 'Mandalorian and Grogu HD Wallpaper',
+    label: 'Mando & Grogu',
+    res: '2912×1632',
+  },
+  {
+    src: 'https://wallpapercave.com/wp/wp14136194.jpg',
+    alt: 'The Mandalorian And Grogu Wallpaper HD',
     label: 'The Mandalorian',
+    res: '3840×2214',
   },
   {
-    src: 'https://lumiere-a.akamaihd.net/v1/images/grogu_main_6b6f8e20.jpeg',
-    alt: 'Grogu – Das Kind',
-    label: 'Grogu',
-  },
-  {
-    src: 'https://upload.wikimedia.org/wikipedia/en/2/26/The_Mandalorian_Season_2.jpg',
-    alt: 'The Mandalorian Staffel 2',
-    label: 'Staffel 2',
-  },
-  {
-    src: 'https://upload.wikimedia.org/wikipedia/en/1/1d/The_Mandalorian_Season_3_poster.jpg',
-    alt: 'The Mandalorian Staffel 3',
-    label: 'Staffel 3',
-  },
-  {
-    src: 'https://upload.wikimedia.org/wikipedia/en/1/15/The_Mandalorian_and_Grogu_logo.jpg',
-    alt: 'The Mandalorian & Grogu – Der Film',
+    src: 'https://wallpapercave.com/wp/wp14136174.jpg',
+    alt: 'The Mandalorian & Grogu Movie Completes',
     label: 'Der Film 2026',
+    res: '2000×1000',
   },
   {
-    src: 'https://upload.wikimedia.org/wikipedia/en/8/8d/The_Mandalorian_Season_1.jpg',
-    alt: 'The Mandalorian Staffel 1',
-    label: 'Staffel 1',
+    src: 'https://wallpapercave.com/wp/wp14136160.jpg',
+    alt: 'Download 4K The Mandalorian Grogu',
+    label: 'Mando & Grogu 4K',
+    res: '1920×1080',
+  },
+  {
+    src: 'https://wallpapercave.com/wp/wp14136026.jpg',
+    alt: 'Tv 4K The Mandalorian',
+    label: 'The Mandalorian 4K',
+    res: '1920×1920',
+  },
+  {
+    src: 'https://wallpapercave.com/wp/wp14136179.jpg',
+    alt: 'Mandalorian and Baby Yoda Wallpaper HD',
+    label: 'Mando & Grogu Mobil',
+    res: '1183×2560',
+  },
+  // Alphacoders
+  {
+    src: 'https://images3.alphacoders.com/110/thumb-1920-1108129.jpg',
+    alt: 'Grogu Baby Yoda – The Mandalorian 4K',
+    label: 'Grogu 4K',
+    res: '3840×2160',
+  },
+  {
+    src: 'https://images.alphacoders.com/135/thumb-1920-1353795.png',
+    alt: 'Mandalorian und Grogu – Wüstenplanet',
+    label: 'Mando & Grogu Wüste',
+    res: '2912×1632',
+  },
+  {
+    src: 'https://images.alphacoders.com/129/thumb-1920-1298487.jpg',
+    alt: 'Grogu in Mandos Arm – grüner Himmel',
+    label: 'Grogu & Mando',
+    res: '2500×1406',
+  },
+  {
+    src: 'https://images.alphacoders.com/140/thumb-1920-1403422.jpg',
+    alt: 'Mando hält Grogu – Feuerhimmel',
+    label: 'Feuerhimmel',
+    res: '3840×2160',
   },
 ]
 
@@ -90,7 +120,20 @@ export default function Gallery() {
             className="lightbox-img"
             onClick={e => e.stopPropagation()}
           />
-          <p className="lightbox-caption">{lightbox.alt}</p>
+          <p className="lightbox-caption">
+            {lightbox.alt}
+            {lightbox.res && <span className="lightbox-res"> · {lightbox.res}</span>}
+          </p>
+          <a
+            href={lightbox.src}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="lightbox-download"
+            onClick={e => e.stopPropagation()}
+          >
+            ↓ Herunterladen
+          </a>
         </div>
       )}
     </section>
