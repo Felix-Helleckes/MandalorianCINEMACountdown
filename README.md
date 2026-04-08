@@ -2,7 +2,7 @@
 
 A fan-made React countdown website for the upcoming **"The Mandalorian & Grogu"** movie, releasing in cinemas on **May 22, 2026**.
 
-Live demo: *(add your Netlify URL here)*
+Live demo: **[mando-countdown.netlify.app](https://mando-countdown.netlify.app)**
 
 ---
 
@@ -78,6 +78,23 @@ npm run preview
 
 ---
 
+## Analytics & SEO
+
+This project follows my standard setup for all web projects:
+
+| Tool | Purpose |
+|---|---|
+| **Google Analytics** (`G-NFGRXLN9L8`) | Visitor tracking, traffic sources, real-time stats |
+| **Google Search Console** | Search indexing, sitemap submission, crawl monitoring |
+| **sitemap.xml** | Auto-discovered by Google for faster indexing |
+| **robots.txt** | Crawler permissions + sitemap reference |
+| **JSON-LD Movie Schema** | Structured data for potential Rich Snippets |
+| **Open Graph / Twitter Card** | Rich previews when sharing on social media |
+
+Google Analytics and Search Console are standard on every project I build.
+
+---
+
 ## What I Learned
 
 - Structuring a React app into reusable components
@@ -87,6 +104,7 @@ npm run preview
 - Working with CSS Custom Properties for consistent theming
 - Embedding third-party content (YouTube IFrame API)
 - Deploying a Vite/React project to Netlify
+- Setting up Google Analytics & Search Console as standard practice
 
 ---
 
