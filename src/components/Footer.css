@@ -79,3 +79,31 @@
   letter-spacing: 0.15em;
   opacity: 0.6;
 }
+
+.footer-coffee {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+  padding: 0.65rem 1.4rem;
+  border: 1px solid rgba(201,168,76,0.35);
+  border-radius: 2rem;
+  background: rgba(201,168,76,0.07);
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  transition: background 0.25s, opacity 0.25s, border-color 0.25s;
+}
+
+.footer-coffee:hover {
+  background: rgba(201,168,76,0.18);
+  border-color: var(--gold);
+  opacity: 1;
+}
+
+.footer-coffee-icon {
+  font-size: 1.1rem;
+}

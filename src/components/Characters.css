@@ -9,9 +9,9 @@
 
 .characters-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 3rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -31,7 +31,7 @@
 
 .char-img-wrap {
   position: relative;
-  height: 260px;
+  height: 380px;
   overflow: hidden;
 }
 
@@ -59,12 +59,12 @@
 }
 
 .char-info {
-  padding: 1.5rem 2rem 2rem;
+  padding: 2rem 2.5rem 2.5rem;
 }
 
 .char-name {
   font-family: var(--font-title);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: var(--gold);
   letter-spacing: 0.1em;
   margin-bottom: 0.2rem;
@@ -92,6 +92,6 @@
 
 .char-desc {
   color: rgba(255,255,255,0.7);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.7;
 }

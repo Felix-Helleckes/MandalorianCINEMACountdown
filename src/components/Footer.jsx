@@ -45,6 +45,18 @@ export default function Footer() {
         </p>
 
         <p className="footer-tagline">"This is The Way."</p>
+
+        <div className="footer-divider" style={{ marginTop: '2rem' }} />
+
+        <a
+          href="https://www.paypal.com/paypalme/Sparky512"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-coffee"
+        >
+          <span className="footer-coffee-icon">☕</span>
+          Buy me a Kaff'a (Caf) for the Way
+        </a>
       </div>
     </footer>
   )
