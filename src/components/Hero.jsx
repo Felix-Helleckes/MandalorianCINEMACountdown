@@ -1,3 +1,18 @@
+        {/* --- SHARE BUTTONS --- */}
+        <div className="mission100k-share" style={{margin:'1.2em auto 0 auto',display:'flex',justifyContent:'center',gap:'1.2em',flexWrap:'wrap'}}>
+          <a href="https://wa.me/?text=MISSION%20100K%20Countdown%20%F0%9F%9A%80%20Win%20Star%20Wars%20Outlaws%20Keys!%20https://mando-countdown.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp" style={{textDecoration:'none'}}>
+            <span style={{fontSize:'1.7em'}} role="img" aria-label="WhatsApp">🟢</span> WhatsApp
+          </a>
+          <a href="https://x.com/intent/tweet?text=MISSION%20100K%20Countdown%20%F0%9F%9A%80%20Win%20Star%20Wars%20Outlaws%20Keys!%20https://mando-countdown.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Share on X" style={{textDecoration:'none'}}>
+            <span style={{fontSize:'1.7em'}} role="img" aria-label="X">❌</span> X
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://mando-countdown.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook" style={{textDecoration:'none'}}>
+            <span style={{fontSize:'1.7em'}} role="img" aria-label="Facebook">🔵</span> Facebook
+          </a>
+          <button onClick={() => {navigator.clipboard.writeText('https://mando-countdown.netlify.app')}} style={{background:'#ffe082',border:'none',borderRadius:3,padding:'0.4em 1.2em',fontWeight:700,cursor:'pointer'}} aria-label="Copy link">
+            <span role="img" aria-label="Copy">🔗</span> Copy Link
+          </button>
+        </div>
 import { useState, useEffect } from 'react'
 import './Hero.css'
 
@@ -82,6 +97,7 @@ export default function Hero() {
           <strong>Help us reach 100,000 subscribers on <a href="https://youtube.com/@theefficientdev" target="_blank" rel="noopener noreferrer" style={{color:'#fff'}}>YouTube</a> before the movie release!</strong><br />
           If we hit the goal, we’ll give away <b>5 Star Wars Outlaws keys</b> to our subscribers.<br />
           Watch daily shorts, join the hype, and don’t miss your chance to win!<br />
+          <a href="/terms.html" target="_blank" rel="noopener noreferrer" style={{color:'#ffe082',textDecoration:'underline'}}>Giveaway Terms & Conditions</a><br />
           <span style={{color:'#c9a84c'}}>#Mission100K #StarWarsOutlaws #Giveaway</span>
         </div>
 
